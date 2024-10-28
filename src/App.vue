@@ -71,6 +71,7 @@ export default {
   },
   created() {
     const consent = getCookie('cookieConsent');
+    console.log(conset, 'aqu')
     if (typeof consent !== null) {
       // this.cookieModule(true)
       this.$store.dispatch('updateCookieConsent', consent === 'true');
